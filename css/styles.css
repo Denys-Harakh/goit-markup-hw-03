@@ -1,0 +1,405 @@
+:root{
+    --primary-tex-color:#212121;
+    --title-text-color:#757575;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --background-color: #2F303A;
+    --logo-color:#000000;
+    --button-hover-color: #188CE8;
+    --filtr-background-color:#F5F4FA;
+}
+
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.list{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    color: var(--primary-tex-color);
+    background-color: var(--primary-white-color);
+}
+
+img {
+    vertical-align: top;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* Логотип Шапка*/
+.logo{ 
+    color: var(--logo-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    display: block;
+    margin-right: 93px;
+}
+
+.accent{
+    color:var(--accent-color);
+}
+/* Навигация */
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color:var(--accent-color);
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .link{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-decoration-style: none;
+    color: var(--primary-tex-color);
+}
+.site-nav .list{
+    display: flex;
+    padding-left: 0;
+}
+.site-nav .item {
+    margin-right: 50px;
+}
+.site-nav .item:last-child {
+    margin-right: 0;
+}
+
+/* Контакты */
+.contacts-list .link {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contacts-list .link:hover,
+.contacts-list .link:focus{
+    color: var(--accent-color);
+}
+
+.contacts-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-left: auto;
+}
+
+.contacts-list .item {
+    margin-right: 50px;
+}
+
+.contacts-list .item:last-child {
+    margin-right: 0;
+}
+
+.hader-flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Герой */
+.hero {
+    background-color: var(--background-color);
+    height: 600px;
+}
+.hero .title {
+    color: var(--primary-white-color);
+    font-size: 44px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 200px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    letter-spacing: 0.06em;
+
+}
+.hero .button {
+    width: 216px;
+    height: 50px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hero .button:hover,
+.hero .button:focus{
+    background-color: var(--button-hover-color);
+}
+button .text{
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    width: 152px;
+    height: 30px;
+    letter-spacing: 0.06em;
+}
+
+.button {
+    display: block;
+    margin: auto;
+}
+
+/* Преимущества */
+.advantage .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+}
+.advantage .text{
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.advantage .list {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 94px;
+}
+
+.advantage .item {
+    margin-right: 30px;
+}
+
+.advantage .item:last-child {
+    margin-right: 0;
+}
+
+.directions .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.directions .list {
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.directions .item {
+    margin-right: 30px;
+}
+
+.directions .item:last-child {
+    margin-right: 0;
+}
+
+/* Наша команда */
+.team {
+    background-color: var(--filtr-background-color);
+}
+.team .title{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+}  
+.complex-list .title{
+    font-size: 16px;
+    line-height: 1.19;
+}
+.team .text{
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team .list {
+    display: flex;
+}
+
+.team .item {
+    margin-right: 30px;
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 94px;
+}
+
+.team .item:last-child {
+    margin-right: 0;
+}
+
+.cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.cards .text {
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+/* Подвал */
+
+/* Логотип Подвал */
+.logo-footer{
+    color: var(--primary-white-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+ }
+
+footer{
+    background-color: var(--background-color);
+}
+
+.map-link{
+    color: var(--primary-white-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+}
+.map-link:hover,
+.map-link:focus{
+    color: var(--accent-color);
+}
+
+footer .link{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+footer .list {
+    padding-left: 0;
+}
+
+footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.contacts {
+    margin-top: 20px;
+}
+
+/* Страница Портфолио */
+main{
+    background-color: var(--primary-white-color)
+}
+/* Кнопки */
+.button button{
+    background-color: var(--filtr-background-color);
+    border-radius: 4px;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+.button .link:hover,
+.button .link:focus,
+.button .link:active{
+color:var(--primary-white-color);
+background-color: var(--accent-color);
+cursor: pointer;
+}
+
+.button .list {
+    display: flex;
+    justify-content: center;
+}
+.button .item {
+margin-right: 8px;
+
+}
+.button .item:last-child {
+    margin-right: 0;
+}
+/* Проэкты */
+.project {
+    padding-bottom: 94px;
+}
+.project .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--primary-tex-color);
+}
+.project p{
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+.project .link{
+    text-decoration: none;
+}
+
+.project .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project .item {
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.portfolio-cards {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
+}
+
+

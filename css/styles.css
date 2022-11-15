@@ -342,7 +342,7 @@ footer .container {
 }
 
 /* Страница Портфолио */
-main{
+main {
     background-color: var(--primary-white-color)
 }
 /* Кнопки */
@@ -375,7 +375,7 @@ cursor: pointer;
     justify-content: center;
 }
 .button .item {
-margin-right: 8px;
+    margin-right: 8px;
 
 }
 .button .item:last-child {
@@ -393,16 +393,15 @@ margin-right: 8px;
     letter-spacing: 0.06em;
     text-decoration: none;
     color: var(--primary-tex-color);
-    margin-top: 20px;
     margin-bottom: 4px;
+    margin-top: 0px;
 }
-.project p{
+.project p {
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0px;
 }
 .project .link{
     text-decoration: none;
@@ -425,10 +424,18 @@ margin-right: 8px;
     margin-bottom: -18px;
   
 }
-
-.portfolio-cards {
-    padding-left: 24px;
-    border: 1px solid #EEEEEE;
+.project-thumb:hover,
+.project-thumb:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
+.portfolio-cards {
+    background-color:var(--primary-white-color);
+    border: 1px solid #eeeeee;
+    border-top: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
